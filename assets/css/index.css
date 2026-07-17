@@ -331,20 +331,22 @@
  .event-card__info .event-card__location {}
 
 
-
+ /* about */
 
  #about {
-     padding: 100px 0px;
+     /* padding: 100px 0px; */
  }
 
- #about .section__title {
+ #about .about_section__title {
      text-align: center;
+     font-size: var(--text-4xl);
+     font-weight: 700;
  }
 
  #about .about__wrapper {
      display: flex;
      flex-direction: column;
-     row-gap: 40px;
+     margin-top: 90px;
  }
 
  .about__wrapper .about__image {
@@ -368,9 +370,29 @@
      padding: 10px 10px;
      display: flex;
      align-items: center;
-     gap: 15px;
+     gap: 5px;
      position: absolute;
      box-shadow: 2px 2px 6px rgba(0, 0, 0, .2);
+ }
+
+ .about__info-item:nth-child(1) i {
+     /* background-color: #DBEAFE;
+     color: #1D4ED8; */
+ }
+
+ .about__info-item:nth-child(2) i {
+     /* background-color: #F3E8FF;
+     color: #7E22CE; */
+ }
+
+ .about__info-item:nth-child(3) i {
+     /* background-color: #FFEDD5;
+     color: #EA580C; */
+ }
+
+ .about__info-item:nth-child(4) i {
+     /* background-color: #CCFBF1;
+     color: #0F766E; */
  }
 
  .about__info-item:nth-child(1) {
@@ -378,25 +400,6 @@
      right: -20px;
  }
 
- .about__info-item:nth-child(1) i {
-     background-color: #DBEAFE;
-     color: #1D4ED8;
- }
-
- .about__info-item:nth-child(2) i {
-     background-color: #F3E8FF;
-     color: #7E22CE;
- }
-
- .about__info-item:nth-child(3) i {
-     background-color: #FFEDD5;
-     color: #EA580C;
- }
-
- .about__info-item:nth-child(4) i {
-     background-color: #CCFBF1;
-     color: #0F766E;
- }
 
  .about__info-item:nth-child(2) {
      top: 40px;
@@ -419,7 +422,7 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     font-size: 9px;
+     font-size: var(--text-xs);
  }
 
  .about__info-item div {
@@ -428,57 +431,47 @@
      align-items: center;
  }
 
- .about__info-item div span {
-     font-size: 12px;
-     font-weight: 800;
+ .about__info-item>div {
+     font-size: var(--text-md);
  }
 
- .about__info-item div strong {
-     font-size: 12px;
+ .about__wrapper .about__content {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
  }
 
- .about__wrapper .about__content {}
-
- .about__content article {}
+ .about__content article {
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
 
  article .about__heading {
      display: flex;
      align-items: center;
-     gap: 12px;
+     gap: 10px;
  }
 
  .about__heading .about__icon {
-     background-color: #fff1f2;
-     color: var(--primary);
-     padding: 15px;
      border-radius: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
-     font-size: 12px;
+     padding: 9px 12px;
+     font-size: var(--text-xs);
+     border: 1px solid gray;
  }
 
  .about__heading .about__subtitle {
      font-weight: 600;
+     font-size: var(--text-xl);
  }
 
  article .about__text {
-     padding: 7px 20px;
-     line-height: 30px;
-     font-size: 16px;
-     color: rgba(0, 0, 0, .5);
-     border: 1px solid rgba(255, 0, 0, .1);
-     margin: 4px 0px;
- }
-
- .about__content .about__button {
-     text-decoration: none;
-     font-size: 14px;
-     color: var(--primary);
-     cursor: pointer;
-     text-align: start;
-     display: block;
-     margin-top: 24px;
+     font-size: var(--text-base);
+     color: rgba(0, 0, 0, .8);
  }
 
  .about__button span {}
@@ -496,27 +489,30 @@
  .about__activities .about__list {
      display: flex;
      flex-direction: column;
-     gap: 6px;
-     padding: 7px 20px;
+     gap: 4px;
  }
 
  .about__list .about__item {
      list-style-type: none;
      display: flex;
-     gap: 6px;
-     color: rgba(0, 0, 0, .5);
+     color: rgba(0, 0, 0, .8);
+     gap: 10px;
  }
 
  .about__item i {
-     background-color: #bbf7d0;
-     color: green;
-     padding: 12px;
      border-radius: 50%;
      display: flex;
      justify-content: center;
      align-items: center;
+     font-size: var(--text-xs);
  }
 
+ .about__content .about__button {
+     text-decoration: none;
+     cursor: pointer;
+     text-align: start;
+     display: block;
+ }
 
 
  /* media query */
@@ -571,6 +567,7 @@
          width: 100%;
          padding: 50px 25px;
      }
+
      .hero__events-list .event__card {}
 
      /* about section */
