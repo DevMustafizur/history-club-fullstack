@@ -334,19 +334,19 @@
  /* about */
 
  #about {
-     margin-top: 50px;
+     padding: 70px 0px;
  }
 
  #about .about_section__title {
      text-align: center;
      font-size: var(--text-4xl);
      font-weight: 700;
+     margin-bottom: 60px;
  }
 
  #about .about__wrapper {
      display: flex;
      flex-direction: column;
-     margin-top: 50px;
  }
 
  .about__wrapper .about__image {
@@ -518,7 +518,7 @@
  /* mission_vision */
  #mission_vision {
      background-color: #F5F5F5;
-     padding: 90px 0px;
+     padding: 70px 0px;
      margin-top: 50px;
  }
 
@@ -568,10 +568,10 @@
      text-align: center;
      font-size: var(--text-4xl);
      font-weight: 700;
+     margin-bottom: 60px;
  }
 
  #club_activities .activities__grid {
-     margin-top: 48px;
      display: flex;
      flex-direction: column;
      row-gap: 40px;
@@ -673,15 +673,15 @@
      padding: 70px 0px;
  }
 
-  #achievement .achievement_section__title {
+ #achievement .achievement_section__title {
      text-align: center;
      font-size: var(--text-4xl);
      font-weight: 700;
+     margin-bottom: 60px;
  }
 
 
  #achievement .achievement__wrapper {
-     margin-top: 48px;
      display: flex;
      flex-direction: column;
      row-gap: 20px;
@@ -723,6 +723,91 @@
  }
 
 
+ /* gallery */
+
+ /* gallery */
+ #gallery {
+     padding: 70px 0px;
+ }
+
+ .gallery_section__title {
+     text-align: center;
+     font-size: var(--text-4xl);
+     font-weight: 700;
+     margin-bottom: 60px;
+ }
+
+ #gallery .gallery_show_all_btn {
+     border: none;
+     outline: none;
+     background: transparent;
+     display: block;
+     margin-left: auto;
+     margin-top: 7px;
+     font-size: 14px;
+     cursor: pointer;
+ }
+
+ #gallery .gallery__filter {
+     margin: auto;
+     width: fit-content;
+     display: flex;
+     gap: 14px;
+ }
+
+ .gallery__filter .gallery-filter__link {
+     display: inline;
+     /* border: 1px solid rgba(255, 0, 0, .6); */
+     /* color: red; */
+     text-decoration: none;
+     border-radius: 25px;
+     padding: 3px 9px;
+     font-size: 15px;
+     border: 1px solid gray;
+ }
+
+ .gallery__filter .gallery-filter__link.active {
+     /* color: white;
+     background-color: red; */
+     color: white;
+     background-color: gray;
+ }
+
+ #gallery .gallery__wrapper {
+     margin-top: 50px;
+     display: flex;
+     flex-direction: column;
+     row-gap: 20px;
+ }
+
+ .gallery__wrapper .gallery__card {
+     width: 100%;
+     cursor: pointer;
+     position: relative;
+ }
+
+ .gallery__card::before {
+     content: "";
+     position: absolute;
+     bottom: 0px;
+     left: 0px;
+     width: 100%;
+     height: 0%;
+     background-color: rgba(255, 255, 255, .8);
+     transition: all .3s ease;
+     border-radius: 4px;
+ }
+
+ .gallery__card:hover::before {
+     height: 100%;
+ }
+
+
+ .gallery__card img {
+     width: 100%;
+     height: 200px;
+     border-radius: 4px;
+ }
 
  /* media query */
  @media screen and (min-width:584px) {
@@ -761,6 +846,16 @@
      .achievement__wrapper .achievement__card {
          width: calc((100% - 30px) / 2);
      }
+
+
+     .gallery__filter .gallery-filter__link {
+         padding: 3px 15px;
+     }
+
+     .faculty-advisors__wrapper .advisor-card {
+         margin: none;
+         width: calc((100% - 30px) / 2);
+     }
  }
 
  @media screen and (min-width:768px) {
@@ -782,6 +877,17 @@
          margin: 0px;
          width: calc((100% - 60px) / 3);
      }
+
+     #gallery .gallery__wrapper {
+         flex-direction: row;
+         flex-wrap: wrap;
+         column-gap: 20px;
+     }
+
+     .gallery__wrapper .gallery__card {
+         width: calc((100% - 20px) / 2);
+     }
+
  }
 
  @media screen and (min-width:1024px) {
@@ -849,6 +955,11 @@
 
      .achievement__wrapper .achievement__card {
          width: calc((100% - 90px) / 4);
+     }
+
+
+     .gallery__wrapper .gallery__card {
+         width: calc((100% - 80px) / 5);
      }
  }
 
