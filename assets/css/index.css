@@ -334,7 +334,7 @@
  /* about */
 
  #about {
-     /* padding: 100px 0px; */
+     margin-top: 50px;
  }
 
  #about .about_section__title {
@@ -346,7 +346,7 @@
  #about .about__wrapper {
      display: flex;
      flex-direction: column;
-     margin-top: 90px;
+     margin-top: 50px;
  }
 
  .about__wrapper .about__image {
@@ -515,16 +515,78 @@
  }
 
 
+ /* mission_vision */
+ #mission_vision {
+     background-color: #F5F5F5;
+     padding: 90px 0px;
+     margin-top: 50px;
+ }
+
+ #mission_vision .mission-vision__wrapper {
+     display: flex;
+     flex-direction: column;
+     row-gap: 20px;
+ }
+
+ .mission-vision__wrapper .mission-card {
+     padding: 20px 20px;
+     text-align: center;
+     border-radius: 6px;
+     background-color: white;
+ }
+
+
+ .mission-card .mission-card__icon {
+     background-color: gray;
+     color: white;
+     padding: 17px;
+     font-size: var(--text-xs);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+     border-radius: 50%;
+ }
+
+ .mission-card .mission-card__title {
+     padding-top: 12px;
+     font-size: var(--text-base);
+ }
+
+ .mission-card small {
+    font-size: var(--text-xs);
+ }
+
+
  /* media query */
  @media screen and (min-width:584px) {
      .container {
          max-width: 584px;
+     }
+
+
+     /* mission visson */
+     .membership .membership__wrapper {
+         gap: 20px;
+     }
+
+     .membership__wrapper .member-card {
+         width: calc((100% - 20px) / 2);
      }
  }
 
  @media screen and (min-width:768px) {
      .container {
          max-width: 7768px;
+     }
+
+     #mission_vision .mission-vision__wrapper {
+         flex-direction: row;
+         column-gap: 20px;
+     }
+
+     .mission-vision__wrapper .mission-card {
+         width: calc((100% - 60px) / 4);
      }
  }
 
