@@ -213,7 +213,7 @@
  .hero__button--secondary:hover {}
 
  .hero__wrapper .hero__events {
-     padding: 50px 25px;
+     padding: 50px 15px;
      border-radius: 6px;
      box-shadow: 0px 0px 10px rgba(0, 0, 0, .135);
  }
@@ -280,8 +280,7 @@
      border-radius: 4px;
  }
 
- .event__card:hover .event-card__number {
- }
+ .event__card:hover .event-card__number {}
 
  .event__card .event-card__content {
      display: flex;
@@ -570,8 +569,8 @@
 
      .hero__wrapper .hero__events {
          width: 100%;
+         padding: 50px 25px;
      }
-
      .hero__events-list .event__card {}
 
      /* about section */
