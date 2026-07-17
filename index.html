@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome CDN LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font POPPINS CDN link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header__desktop">
+                <div class="header__wrapper">
+                    <a href="#" class="header__brand">
+                        <div class="header__logo">
+                            <img src="https://assets.roar.media/Bangla/2017/10/herodotus_360x450-701x876.jpg"
+                                alt="ইতিহাস ক্লাবের লোগো">
+                        </div>
+
+                        <div class="header__brand-content">
+                            <h2 class="header__brand-title">ইতিহাস ক্লাব</h2>
+                            <p class="header__brand-subtitle">
+                                সাতক্ষীরা সরকারি কলেজ
+                            </p>
+                        </div>
+                    </a>
+                    <nav class="header__nav" aria-label="প্রধান নেভিগেশন">
+                        <ul class="header__menu">
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link active">হোম</a>
+                            </li>
+
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">আমাদের সম্পর্কে</a>
+                            </li>
+
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">গ্যালারি</a>
+                            </li>
+
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">কার্যক্রম</a>
+                            </li>
+
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">যোগাযোগ</a>
+                            </li>
+                        </ul>
+                        <div class="header__actions">
+                            <a href="#" class="header__action header__action--primary">
+                                অভিজ্ঞতা শেয়ার করুন
+                            </a>
+                            <a href="#" class="header__action header__action--login">
+                                লগইন
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="header__mobile">
+                <div class="header__wrapper">
+                    <a href="#" class="header__brand">
+                        <div class="header__logo">
+                            <img src="https://assets.roar.media/Bangla/2017/10/herodotus_360x450-701x876.jpg"
+                                alt="ইতিহাস ক্লাবের লোগো">
+                        </div>
+
+                        <div class="header__brand-content">
+                            <h2 class="header__brand-title">ইতিহাস ক্লাব</h2>
+                            <p class="header__brand-subtitle">
+                                সাতক্ষীরা সরকারি কলেজ
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="header__action header__action--primary">
+                        <i class="fa-solid fa-bars header__action-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <!-- hero section -->
+        <!-- <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                 <header class="hero__content">
+                        <p class="hero__subtitle">
+                            <span>সাতক্ষীরা সরকারি কলেজ</span>,
+                            <strong>ইতিহাস বিভাগ</strong>
+                        </p>
+                        <h1 class="hero__title">
+                            ইতিহাস চর্চায় শিক্ষা,
+                            গবেষণা ও
+                            <span class="hero__title_highlight"><i>সৃজনশীলতার</i></span>
+                            নতুন দিগন্ত
+                        </h1>
+                        <p class="hero__description">
+                            <strong>ইতিহাস ক্লাব</strong>
+                            ইতিহাসের জ্ঞান বিস্তার, গবেষণা কার্যক্রম,
+                            আলোচনা সভা, কুইজ প্রতিযোগিতা, প্রকাশনা,
+                            সাংস্কৃতিক অনুষ্ঠান এবং ঐতিহাসিক ঐতিহ্য সংরক্ষণের মাধ্যমে
+                            শিক্ষার্থীদের <span>সৃজনশীলতা</span> ও
+                            <span>নেতৃত্বের বিকাশে</span> গুরুত্বপূর্ণ ভূমিকা রাখে।
+                        </p>
+
+                        <nav class="hero__actions" aria-label="Hero Actions">
+                            <a href="#" class="hero__button hero__button--primary">
+                                আমাদের কার্যক্রম দেখুন
+                            </a>
+
+                            <a href="#" class="hero__button hero__button--secondary">
+                                অভিজ্ঞতা শেয়ার করুন
+                            </a>
+                        </nav>
+                    </header> 
+
+                    <aside class="hero__events">
+                        <header class="hero__events-header">
+                            <h2 class="sr-only">
+                                আসন্ন <span>কার্যক্রম</span>
+                            </h2>
+                            <form class="hero__events-search" role="search">
+                                <i class="fa-solid fa-magnifying-glass hero__events-search-icon" aria-hidden="true"></i>
+                                <input id="event-search" class="event-search" type="search" placeholder="খুঁজুন...">
+                            </form>
+                            <nav aria-label="Events Navigation">
+                                <a href="#" class="hero__events-link">
+                                    সব দেখুন
+                                </a>
+                            </nav>
+                        </header>
+                        <section class="hero__events-list">
+                            <article class="event__card">
+                                <header class="event-card__content">
+                                    <span class="event-card__number">
+                                        01
+                                    </span>
+                                    <figure class="event-card__image">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-YgkR03uttyyL7KMNnV_Do6Mxp4renNWY7kSxTtRj927LBBorUFigqFh3&s=10"
+                                            alt="আন্তঃবিভাগীয় ফুটবল টুর্নামেন্ট">
+                                    </figure>
+                                    <div class="event-card__info">
+                                        <h3 class="event-card__title">
+                                            আন্তঃবিভাগীয় ফুটবল টুর্নামেন্ট
+                                        </h3>
+                                        <address class="event-card__location">
+                                            সাতক্ষীরা সরকারি কলেজ
+                                        </address>
+                                    </div>
+                                </header>
+
+                                <footer class="event-card__meta">
+                                    <p>
+                                        সদস্য:
+                                        <strong>৩৪ জন</strong>
+                                    </p>
+
+                                    <time datetime="2026-12-03">
+                                        ০৩-১২-২০২৬
+                                    </time>
+                                </footer>
+
+                            </article>
+
+                            <article class="event__card">
+
+                                <header class="event-card__content">
+
+                                    <span class="event-card__number">
+                                        02
+                                    </span>
+
+                                    <figure class="event-card__image">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-YgkR03uttyyL7KMNnV_Do6Mxp4renNWY7kSxTtRj927LBBorUFigqFh3&s=10"
+                                            alt="আন্তঃবিভাগীয় ফুটবল টুর্নামেন্ট">
+                                    </figure>
+
+                                    <div class="event-card__info">
+                                        <h3 class="event-card__title">
+                                            আন্তঃবিভাগীয় ফুটবল টুর্নামেন্ট
+                                        </h3>
+
+                                        <address class="event-card__location">
+                                            সাতক্ষীরা সরকারি কলেজ
+                                        </address>
+                                    </div>
+
+                                </header>
+
+                                <footer class="event-card__meta">
+                                    <p>
+                                        সদস্য:
+                                        <strong>৩৪ জন</strong>
+                                    </p>
+
+                                    <time datetime="2026-12-03">
+                                        ০৩-১২-২০২৬
+                                    </time>
+                                </footer>
+
+                            </article>
+
+                        </section>
+
+                    </aside>
+
+                </div>
+            </div>
+        </section> -->
+        <!-- about section -->
+        <!-- <section class="about" id="about">
+            <h2 class="section__title">আমাদের <span>সম্পর্কে</span></h2>
+            <div class="container">
+                <h1 class="section__title">আমাদের সম্পর্কে</h1>
+                <div class="about__wrapper">
+                    <figure class="about__image">
+                        <img src="https://st2.depositphotos.com/1000647/6952/i/450/depositphotos_69526839-stock-photo-vintage-still-life.jpg"
+                            alt="History Club members">
+                        <figcaption class="about__info">
+                            <div class="about__info-item">
+                                <i class="fa-solid fa-calendar"></i>
+                                <div>
+                                    <span>প্রতিষ্ঠাকাল</span>
+                                    <strong>২০২6</strong>
+                                </div>
+                            </div>
+                            <div class="about__info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <span>স্থান</span>
+                                    <strong>সাতক্ষীরা সরকারি কলেজ</strong>
+                                </div>
+                            </div>
+                            <div class="about__info-item">
+                                <i class="fa-solid fa-users"></i>
+                                <div>
+                                    <span>সদস্য</span>
+                                    <strong>৫০+ শিক্ষার্থী</strong>
+                                </div>
+                            </div>
+                            <div class="about__info-item">
+                                <i class="fa-solid fa-book"></i>
+                                <div>
+                                    <span>কার্যক্রম</span>
+                                    <strong>ইতিহাস চর্চা</strong>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="about__content">
+                        <article class="about__intro">
+                            <div class="about__heading">
+                                <i class="about__icon fa-solid fa-landmark"></i>
+                                <h3 class="about__subtitle">ইতিহাস ক্লাব কী?</h3>
+                            </div>
+                            <p class="about__text">
+                                ইতিহাস ক্লাব হলো ইতিহাস বিভাগের শিক্ষার্থীদের একটি প্ল্যাটফর্ম, যেখানে ইতিহাস,
+                                ঐতিহ্য ও সংস্কৃতি নিয়ে চর্চা, গবেষণা এবং বিভিন্ন কার্যক্রম পরিচালনা করা হয়।
+                            </p>
+                        </article>
+                        <article class="about__purpose">
+                            <div class="about__heading">
+                                <i class="about__icon fa-solid fa-bullseye"></i>
+                                <h3 class="about__subtitle">উদ্দেশ্য কী?</h3>
+                            </div>
+                            <p class="about__text">
+                                কুইজ, ঐতিহাসিক ভ্রমণ, গবেষণা, আলোচনা ও বিভিন্ন সৃজনশীল কার্যক্রমের মাধ্যমে
+                                শিক্ষার্থীদের ইতিহাস সম্পর্কে আগ্রহ ও জ্ঞান বৃদ্ধি করা।
+                            </p>
+                        </article>
+                        <article class="about__activities">
+                            <div class="about__heading">
+                                <i class="about__icon fa-solid fa-list-check"></i>
+                                <h3 class="about__subtitle">আমাদের কার্যক্রম কী কী?</h3>
+                            </div>
+                            <ul class="about__list">
+                                <li class="about__item">
+                                    <i class="fa-solid fa-check"></i>
+                                    ইতিহাস বিষয়ক আলোচনা ও সেমিনার আয়োজন
+                                </li>
+
+                                <li class="about__item">
+                                    <i class="fa-solid fa-check"></i>
+                                    ইতিহাসভিত্তিক কুইজ প্রতিযোগিতা
+                                </li>
+
+                                <li class="about__item">
+                                    <i class="fa-solid fa-check"></i>
+                                    ঐতিহাসিক স্থান ভ্রমণ ও পর্যবেক্ষণ
+                                </li>
+
+                                <li class="about__item">
+                                    <i class="fa-solid fa-check"></i>
+                                    ইতিহাস বিষয়ক গবেষণা ও প্রকাশনা কার্যক্রম
+                                </li>
+
+                                <li class="about__item">
+                                    <i class="fa-solid fa-check"></i>
+                                    ইতিহাসভিত্তিক গেম ও সৃজনশীল আয়োজন
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="about__membership">
+                            <div class="about__heading">
+                                <i class="about__icon fa-solid fa-users"></i>
+                                <h3 class="about__subtitle">কারা যুক্ত হতে পারবে?</h3>
+                            </div>
+                            <p class="about__text">
+                                সাতক্ষীরা সরকারি কলেজের ইতিহাস বিভাগের সকল আগ্রহী শিক্ষার্থী ইতিহাস চর্চা,
+                                গবেষণা ও বিভিন্ন কার্যক্রমে অংশগ্রহণের মাধ্যমে এই ক্লাবের সদস্য হতে পারবে।
+                            </p>
+                        </article>
+                        <a href="#" class="about__button">
+                            <span>আরো জানুন</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+</body>
+
+</html>
