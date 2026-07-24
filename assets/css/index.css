@@ -4,6 +4,46 @@
     margin: auto
 }
 
+#activities {
+    padding: 50px 0px;
+}
+
+#activities .activities__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.activities__wrapper .activities__card {
+    padding: 30px 20px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.activities__card .activities__icon {
+    font-size: 20px;
+    background-color: rgba(215, 130, 190, .1);
+    padding: 15px;
+    border-radius: 50%;
+    display: inline;
+    color: rgba(255, 0, 0, .8);
+    font-weight: 700;
+}
+
+.activities__card .activities__title {
+    margin-top: 35px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.activities__card .activities__description {
+    margin-top: 10px;
+    line-height: 28px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .8);
+}
+
 /* gallery */
 
 #gallery {
@@ -506,6 +546,7 @@
     background-color: white;
     padding: 30px;
     border-radius: 10px;
+    border: 1px solid rgba(255, 0, 0, .2);
 }
 
 .policy__card .policy__icon {
@@ -517,12 +558,14 @@
     color: rgba(255, 0, 0, .8);
     font-weight: 700;
 }
-.policy__card .policy__title{
+
+.policy__card .policy__title {
     font-size: 16px;
     font-weight: 700;
     margin-top: 30px;
 }
-.policy__card .policy__description{
+
+.policy__card .policy__description {
     font-size: 14px;
     margin-top: 10px;
     line-height: 25px;
@@ -531,6 +574,16 @@
 
 /* media query */
 @media screen and (min-width:584px) {
+
+    /* activites */
+    #activities .activities__wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .activities__wrapper .activities__card {
+        width: calc((100% - 25px) / 2);
+    }
 
     /* faculty-advisors */
     .faculty-advisors__wrapper .advisor-card {
@@ -550,6 +603,12 @@
 }
 
 @media screen and (min-width:768px) {
+
+    /* activites */
+    .activities__wrapper .activities__card {
+        width: calc((100% - 50px) / 3);
+    }
+
 
     /* gallery */
     #gallery .gallery__wrapper {
@@ -580,6 +639,11 @@
 }
 
 @media screen and (min-width:1024px) {
+
+    /* activites */
+    .activities__wrapper .activities__card {
+        width: calc((100% - 75px) / 4);
+    }
 
     /*  #chief-patron .chief-patron-card */
     #chief-patron .chief-patron-card {
