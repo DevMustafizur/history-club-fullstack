@@ -44,6 +44,47 @@
     color: rgba(0, 0, 0, .8);
 }
 
+/* mission-visson */
+#mission_vission {
+    background-color: #F5F5F5;
+    padding: 50px 0px;
+}
+
+#mission_vission .mission_vission-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mission_vission-wrapper article {
+    padding: 35px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.mission_vission-wrapper article i {
+    font-size: 20px;
+    background-color: rgba(215, 130, 190, .1);
+    padding: 15px;
+    border-radius: 50%;
+    display: inline;
+    color: rgba(255, 0, 0, .8);
+    font-weight: 700;
+}
+
+.mission_vission-wrapper article h4 {
+    margin-top: 35px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.mission_vission-wrapper article p {
+    margin-top: 10px;
+    line-height: 28px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .8);
+}
+
 /* gallery */
 
 #gallery {
@@ -584,6 +625,16 @@
     .activities__wrapper .activities__card {
         width: calc((100% - 25px) / 2);
     }
+
+    /* mission-vission */
+    #mission_vission .mission_vission-wrapper {
+        flex-direction: row;
+    }
+
+    .mission_vission-wrapper article {
+        width: calc((100% - 25px) / 2);
+    }
+
 
     /* faculty-advisors */
     .faculty-advisors__wrapper .advisor-card {
