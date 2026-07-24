@@ -153,7 +153,7 @@
 }
 
 /* text for heading */
-h1 {
+/* h1 {
     font-size: 40px;
     line-height: 26px;
 }
@@ -181,74 +181,73 @@ h5 {
 h6 {
     font-size: 14px;
     line-height: 26px;
-}
+} */
 
 
 
 /* UI Primary Man Action / Navigation */
-a,
+/* a,
 button {
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
-}
+} */
 
 
 /* UI Secondary Form Control / Input Text */
-input,
+/* input,
 textarea,
 select,
 label {
     font-size: 12px;
     line-height: 18px;
     font-weight: 500;
-}
+} */
 
 
 /* UI Display Primary Result / Important Value*/
-output,
+/* output,
 meter {
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
-}
+} */
 
 
 /* UI Display Secondary Status / Supporting Value */
-progress,
+/* progress,
 data {
     font-size: 12px;
     line-height: 18px;
     font-weight: 500;
+} */
+
+
+
+/* header style */
+.section-header{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
-
-/* Icon Small */
-.icon-sm {
-    font-size: 14px;
+.section-header .section-header__subtitle{
+    font-size: 10px;
+    background-color: rgba(215, 130, 190, .1);
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline;
+    color: rgba(255, 0, 0, .8);
+    font-weight: 700;
 }
-
-/* Icon Medium */
-.icon-md {
-    font-size: 18px;
+.section-header .section-header__title{
+    margin-top: 15px;
+    font-size: 34px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .8);
 }
-
-/* Icon Large */
-.icon-lg {
-    font-size: 24px;
-}
-
-
-.container {
-    width: 96%;
-    margin: auto;
-}
-
-.section__title {
-    font-size: var(--text-4xl);
-    font-weight: 600;
-}
-
-.section__title span {
-    font-weight: 600;
-    color: var(--primary);
+.section-header .section-header__description{
+    margin-top: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+    line-height: 35px;
 }
