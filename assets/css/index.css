@@ -1041,6 +1041,30 @@
     font-size: 16px;
 }
 
+/* achievement */
+#achievement {
+    padding: 50px 0px;
+}
+
+#achievement .achievement__wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.achievement__wrapper .achievement__card {
+    width: calc((100% - 40px) / 2);
+    text-align: center;
+}
+.achievement__card .achievement__number{
+    font-size: 27px;
+    font-weight: 700;
+}
+.achievement__card .achievement__title{
+    font-size: 16px;
+    margin-top: 7px;
+}
+
 /* media query */
 @media screen and (min-width:584px) {
 
@@ -1093,8 +1117,9 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .notice_wrapper .notice_card{
-        width: calc((100% - 20px) / 2) ;
+
+    .notice_wrapper .notice_card {
+        width: calc((100% - 20px) / 2);
     }
 }
 
@@ -1141,6 +1166,12 @@
     /* notice */
     .notice_wrapper .notice_card {
         width: calc((100% - 40px) / 3);
+    }
+
+    /* achivement */
+    .achievement__wrapper .achievement__card {
+        width: calc((100% - 120px) / 4);
+        text-align: center;
     }
 }
 
