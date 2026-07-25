@@ -818,6 +818,81 @@
     font-size: 12px;
 }
 
+/* notice */
+#notice {}
+
+#notice .notice_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notice_wrapper .notice_card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+    position: relative;
+}
+
+.notice_card::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: red;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.notice_card .notice_card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice_card-header .notice_card-category {
+    font-size: 12px;
+    background-color: rgba(215, 130, 190, .1);
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline;
+    color: rgba(255, 0, 0, .8);
+    font-weight: 700;
+}
+
+.notice_card-header .notice_card-date {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .9);
+}
+
+.notice_card .notice_card-content {
+    margin-top: 20px;
+}
+
+.notice_card-content .notice_card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .8);
+}
+
+.notice_card-content .notice_card-description {
+    margin-top: 12px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .8);
+}
+
+.notice_card-content .notice_card-button {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-top: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    color: rgba(255, 0, 0, .8);
+}
+
 /* contact */
 #contact {
     padding: 50px 0px;
@@ -1003,6 +1078,15 @@
     .members__wrapper .member__card {
         min-width: calc((100% - 30px) / 3);
     }
+
+    /* notice */
+    #notice .notice_wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .notice_wrapper .notice_card{
+        width: calc((100% - 20px) / 2) ;
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -1043,6 +1127,11 @@
     /* members */
     .members__wrapper .member__card {
         min-width: calc((100% - 45px) / 4);
+    }
+
+    /* notice */
+    .notice_wrapper .notice_card {
+        width: calc((100% - 40px) / 3);
     }
 }
 
@@ -1092,7 +1181,7 @@
 
     /* members */
     .members__wrapper .member__card {
-        min-width: calc((100% - 60px) / 5);
+        min-width: calc((100% - 45px) / 4);
     }
 
     /* contact */
